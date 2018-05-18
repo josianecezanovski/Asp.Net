@@ -1,0 +1,47 @@
+﻿@model Aula1505_MVC1.Models.Categoria
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create</h2>
+
+@using (Html.BeginForm())
+{
+    ///@Html.TextBoxFor(m => m.Nome)
+    <br />
+    <br />
+
+    ///@Html.CheckBoxFor(m => m.Ativo)
+    <br />
+    <br />
+    //<input type="submit" value="Salvar" />
+
+
+    /////ACIMA FORMULARIO 1 (USANDO MODEL)
+
+
+
+    ////ABAIXO FORMULARIO 2 (USANDO MODEL)
+
+    @Html.DisplayNameFor(m => m.Name)
+    /// @Html.EditorFor(m => m.)
+
+    @Html.DisplayNameFor(m => m.Ativo)
+    /// @Html.EditorFor(m => m.Ativo)
+    <br />
+    <br />
+
+    ///@Html.CheckBoxFor(m => m.Ativo)
+    <br />
+    <br />
+    ///<input type="submit" value="Salvar" />
+
+
+    ////ABAIXO FORMULARIO 3 (USANDO MODEL)
+
+
+
+    @Html.EditorForModel()
+    <input type="submit" value="Salvar" />
+}
+
